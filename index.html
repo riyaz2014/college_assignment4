@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping site</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order Page</h1>
+
+      <form action="" onsubmit="return false">
+          <div id="select">
+            <div >
+                <label for="Shirt">Select Shirt</label>
+                <select name= "Shirt" id="Shirt">
+                <option value="select">select</option>
+                  <option
+                    value="Men’s Cotton Full Sleeve Classic Round Neck Black T Shirt"
+                  >
+                    Men’s Cotton Full Sleeve Classic Round Neck Black T Shirt
+                  </option>
+                  <option
+                    value="Tshirts for Men|Full Sleeve Cowl Neck Tshirts|Men's Stylish Regular Fit"
+                  >
+                    Tshirts for Men|Full Sleeve Cowl Neck Tshirts|Men's Stylish
+                    Regular Fit
+                  </option>
+                  <option
+                    value="Men's Round Neck Half Sleeve Picture Printed T-Shirt"
+                  >
+                    Men's Round Neck Half Sleeve Picture Printed T-Shirt
+                  </option>
+                  <option value="Cotton Men's Round Neck Full Sleeve T Shirt for Men">
+                    Cotton Men's Round Neck Full Sleeve T Shirt for Men
+                  </option>
+                  <option value="Men's Regular Fit T-Shirt">
+                    Men's Regular Fit T-Shirt
+                  </option>
+                  <option value="Band Collar Men's T-Shirt(EBT325 & EBT325HS)">
+                    Band Collar Men's T-Shirt(EBT325 & EBT325HS)
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label for="tagline">Tagline</label>
+                <select name="tagline" id="tagline" >
+                  <option value="select">select</option>
+                  <option value="being human">being human</option>
+                  <option value="nike">nike</option>
+                  <option value="let it be ">let it be</option>
+                  <option value="move ahead">move ahead</option>
+                  <option value="vesit">vesit</option>
+                  <option value="evergreen">evergreen</option>
+                </select>
+              </div>
+      
+              <div>
+                <label for="Color">Color</label>
+                <select name="color" id="Color" >
+                    <option value="select">select</option>
+                  <option value="white">white</option>
+                  <option value="black">black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Pink">Pink</option>
+                  <option value="light pink">light pink</option>
+                </select>
+              </div>
+      
+          </div>
+        
+        <div>
+          <label for="quantity">quantity</label>
+          <input type="number" name="quantity" id="quantity"  />
+        </div>
+
+        <div>
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date"  />
+        </div>
+
+        <div class="radioButton">
+          <div>
+            <label for="cash">Cash On Delivery</label>
+              <input
+                type="radio"
+                name="delivery"
+                id="cash"
+                value="cashDelivery"
+              />
+          </div>
+          <div>
+            <label for="NetBanking">Net Banking</label>
+              <input
+                type="radio"
+                name="delivery"
+                id="NetBanking"
+                value="netBanking"
+              />
+          </div>
+
+          <div>
+            <label for="googlePay">Google Pay</label>
+              <input
+                type="radio"
+                name="delivery"
+                id="googlePay"
+                value="googlePay"
+              />
+          </div>
+              
+              
+        </div>
+        <div>
+            <input id="submit" type="submit" value="submit" onclick="ValidateForm()"/>
+        </div>
+
+        <p id="message"></p>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
