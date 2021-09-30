@@ -14,7 +14,6 @@ let student = {
 
 student.print()
 
-
 console.log("")
 console.log("print by constructor")
 
@@ -38,10 +37,9 @@ student2.print()
 
 
 function takeInput(){
-    let roll = prompt("enter your roll no")
-    
+    let roll = document.getElementById('rollNo').value
     if(roll == 0){
-        console.log("roll Number cant be zero")
+        alert('roll Number cant be zero')
     }
     else{
         student.rollNo = roll;
